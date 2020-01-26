@@ -1,0 +1,9 @@
+import cv2
+print(cv2.__version__)
+#color picture: read one picture, result in 3D matrix; read more than one picture, result in 4D matrix
+#gray picture: read one picture, result in 2D matrix; read more than one picture, result in 3D matrix
+img = cv2.imread('flower.jpg')
+img.shape
+cv2.imshow('flower_img', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
